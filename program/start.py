@@ -52,10 +52,10 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
+        f"""✨ **ʜᴀʟʟᴏ ᴀɴᴀᴋ ʏᴀᴛɪᴍ {message.from_user.mention()} !**\n
+💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ʙɪsᴀ ᴍᴜᴛᴇʀɪɴ ʟᴀɢᴜ ᴅɪ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ ʟᴜ!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **ʙɪᴀʀ ᴛᴀᴜ sᴇᴍᴜᴀ ᴄᴏᴍᴍᴀɴᴅs ᴅᴀɴ ꜰɪᴛᴜʀ ʏɢ ᴀᴅᴀ ᴅɪ ʙᴏᴛ ɪɴɪ » 📚 ᴘᴇʀɪɴᴛᴀʜ!**
 
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
 """,
@@ -63,7 +63,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ ᴍᴀsᴜᴋɪɴ ɢᴜᴀ ᴋᴇ ɢᴄ ʟᴜ ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -82,7 +82,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Source Code", url="https://github.com/sielzz/SielzzMusic"
                     )
                 ],
             ]
