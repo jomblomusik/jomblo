@@ -9,7 +9,7 @@
         "pyrogram"
     ],
     "website": "https://t.me/levinachannel",
-    "repository": "https://github.com/levina-lab/video-stream",
+    "repository": "https://github.com/sielzz/SielzzMusic",
     "success_url": "https://t.me/dlwrml",
     "env": {
         "API_ID": {
@@ -74,7 +74,7 @@
             "url": "heroku/nodejs"
         },
         {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+            "url": "https://github.com/sielzz/heroku-buildpack-ffmpeg-latest.git"
         }
     ],
     "formation": {
