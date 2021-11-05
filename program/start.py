@@ -57,7 +57,7 @@ async def start_(client: Client, message: Message):
 
 💡 **ʙɪᴀʀ ᴛᴀᴜ sᴇᴍᴜᴀ ᴄᴏᴍᴍᴀɴᴅs ᴅᴀɴ ꜰɪᴛᴜʀ ʏɢ ᴀᴅᴀ ᴅɪ ʙᴏᴛ ɪɴɪ » 📚 ᴘᴇʀɪɴᴛᴀʜ!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
+🔖 **biar lu tau cara pake nya, baca dlu kontol » ❓ baca ini goblok!**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -67,9 +67,9 @@ async def start_(client: Client, message: Message):
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ panduan ngocok", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+                    InlineKeyboardButton("📚 kamus mengocok", callback_data="cbcmds"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
