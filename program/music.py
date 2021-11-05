@@ -135,7 +135,7 @@ async def play(c: Client, m: Message):
                 await suhu.delete()
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {m.from_user.mention()}\n🔢 **At position »** `{pos}`",
+                    caption=f"💡 **bansos telah di tambahkan**\n\n🏷 **nama:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {m.from_user.mention()}\n🔢 **Antrian bansos ke »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -151,7 +151,7 @@ async def play(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"💡 **music streaming started.**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                    caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                     reply_markup=keyboard,
                 )
         else:
@@ -160,11 +160,11 @@ async def play(c: Client, m: Message):
                     "» reply to an **audio file** or **give something to search.**"
                 )
             else:
-                suhu = await m.reply("🔎 **searching...**")
+                suhu = await m.reply("🔎 **cari kuburan bapak lu...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
-                    await suhu.edit("❌ **no results found.**")
+                    await suhu.edit("❌ **gaada goblok uda di gusur.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -180,7 +180,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_1}",
-                                caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                                caption=f"💡 **bansos telah di tambahkan**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -197,7 +197,7 @@ async def play(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"{IMG_2}",
-                                    caption=f"💡 **music streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                    caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -209,11 +209,11 @@ async def play(c: Client, m: Message):
                 "» reply to an **audio file** or **give something to search.**"
             )
         else:
-            suhu = await m.reply("🔎 **searching...**")
+            suhu = await m.reply("🔎 **cari kuburan bapak lu...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await suhu.edit("❌ **no results found.**")
+                await suhu.edit("❌ **gaada uda di gusur goblok.**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -229,7 +229,7 @@ async def play(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"{IMG_1}",
-                            caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                            caption=f"💡 **bansos telah di tambahkan**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                             reply_markup=keyboard,
                         )
                     else:
@@ -246,7 +246,7 @@ async def play(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_2}",
-                                caption=f"💡 **music streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -343,7 +343,7 @@ async def stream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Track added to the queue**\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                    caption=f"💡 **bansos telah di tambahkan**\n\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
