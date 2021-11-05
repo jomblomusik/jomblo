@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/SielzzMusicBot"><img src="https://github.com/sielzz/SielzzMusic/raw/main/driver/veezlogo.png"></a></p>
+<p align="center"><a href="https://t.me/SielzzMusicBot"><img src="https://github.com/sielzz/SielzzMusic/raw/main/driver/https://github.com/sielzz/video-stream/blob/main/driver/IMG_20211105_181514_421.jpg"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
