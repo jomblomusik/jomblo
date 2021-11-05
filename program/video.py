@@ -151,7 +151,7 @@ async def vplay(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                    caption=f"💡 **bansos telah di tambahkan**\n\n🏷 **nama:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -175,7 +175,7 @@ async def vplay(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_2}",
-                    caption=f"💡 **video streaming started.**\n\n🏷 **Name:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                    caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({link})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                     reply_markup=keyboard,
                 )
         else:
@@ -184,13 +184,13 @@ async def vplay(c: Client, m: Message):
                     "» reply to an **video file** or **give something to search.**"
                 )
             else:
-                loser = await m.reply("🔎 **searching...**")
+                loser = await m.reply("🔎 **cari kuburan bapak lu...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
                 amaze = HighQualityVideo()
                 if search == 0:
-                    await loser.edit("❌ **no results found.**")
+                    await loser.edit("❌ **gaada uda di gusur goblok.**")
                 else:
                     songname = search[0]
                     url = search[1]
@@ -206,7 +206,7 @@ async def vplay(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_1}",
-                                caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                                caption=f"💡 **bansos telah di tambahkan ke**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                                 reply_markup=keyboard,
                             )
                         else:
@@ -225,7 +225,7 @@ async def vplay(c: Client, m: Message):
                                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                                 await m.reply_photo(
                                     photo=f"{IMG_2}",
-                                    caption=f"💡 **video streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                    caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                                     reply_markup=keyboard,
                                 )
                             except Exception as ep:
@@ -237,13 +237,13 @@ async def vplay(c: Client, m: Message):
                 "» reply to an **video file** or **give something to search.**"
             )
         else:
-            loser = await m.reply("🔎 **searching...**")
+            loser = await m.reply("🔎 **cari kuburan bapak lu...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             amaze = HighQualityVideo()
             if search == 0:
-                await loser.edit("❌ **no results found.**")
+                await loser.edit("❌ **gaada uda di gusur goblok.**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -259,7 +259,7 @@ async def vplay(c: Client, m: Message):
                         )
                         await m.reply_photo(
                             photo=f"{IMG_1}",
-                            caption=f"💡 **Track added to the queue**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                            caption=f"💡 **bansos telah di tambahkan ke**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                             reply_markup=keyboard,
                         )
                     else:
@@ -278,7 +278,7 @@ async def vplay(c: Client, m: Message):
                             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                             await m.reply_photo(
                                 photo=f"{IMG_2}",
-                                caption=f"💡 **video streaming started.**\n\n🏷 **Name:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                                caption=f"💡 **bansos telah di berikan ke.**\n\n🏷 **nama:** [{songname}]({url})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                                 reply_markup=keyboard,
                             )
                         except Exception as ep:
@@ -389,7 +389,7 @@ async def vstream(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Track added to the queue**\n\n💭 **Chat:** `{chat_id}`\n🎧 **Request by:** {requester}\n🔢 **At position »** `{pos}`",
+                    caption=f"💡 **bansos telah di tambahkan**\n\n💭 **Chat:** `{chat_id}`\n🎧 **permintaan si kontol:** {requester}\n🔢 **antrian bansos ke »** `{pos}`",
                     reply_markup=keyboard,
                 )
             else:
@@ -416,7 +416,7 @@ async def vstream(c: Client, m: Message):
                     )
                     await m.reply_photo(
                         photo=f"{IMG_2}",
-                        caption=f"💡 **[Live stream video]({link}) started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {requester}",
+                        caption=f"💡 **[Live stream video]({link}) started.**\n\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `ngocok`\n🎧 **permintaan si kontol:** {requester}",
                         reply_markup=keyboard,
                     )
                 except Exception as ep:
