@@ -204,12 +204,12 @@ async def cbresume(_, query: CallbackQuery):
         try:
             await call_py.resume_stream(chat_id)
             await query.edit_message_text(
-                "▶️ streaming has resumed", reply_markup=bttn
+                "▶️ bansos keluarga lu uda di jeda", reply_markup=bttn
             )
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.edit_message_text("❌ **nothing in streaming**", reply_markup=bcl)
+        await query.edit_message_text("❌ **mau jeda apaan kontol**", reply_markup=bcl)
 
 
 @Client.on_callback_query(filters.regex("cbstop"))
@@ -239,12 +239,12 @@ async def cbmute(_, query: CallbackQuery):
         try:
             await call_py.mute_stream(chat_id)
             await query.edit_message_text(
-                "🔇 userbot succesfully muted", reply_markup=bttn
+                "🔇 bansos keluarga lu uda di berentiin", reply_markup=bttn
             )
         except Exception as e:
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=bcl)
     else:
-        await query.edit_message_text("❌ **nothing in streaming**", reply_markup=bcl)
+        await query.edit_message_text("❌ **apa yang mau di berentiin goblok**", reply_markup=bcl)
 
 
 @Client.on_callback_query(filters.regex("cbunmute"))
